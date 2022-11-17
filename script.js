@@ -20,6 +20,11 @@ function setDate(){
     
 }
 
-
+function displayDigital() {
+    let x = new Date()
+    document.querySelector('.digital').innerHTML = x;
+     }
+    displayDigital();
 setInterval(setDate, 1000);
+setInterval(displayDigital, 1000);
 setDate()
